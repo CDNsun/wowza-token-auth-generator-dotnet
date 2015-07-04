@@ -1,0 +1,1 @@
+C:\Users\ssteo\Desktop\cdn-wowza-token-tool\dotnet\src\TokenAuthGenerator\bin\Release\TokenAuthGenerator.exe.config
