@@ -1,23 +1,24 @@
 #Token generator for Wowza Token Authentication
 
 
-REQUIRE
+REQUIRES
 
-  Java 6 or 7, Maven 2 or 3
+ * .NET Framework 4.5
+ * BouncyCastle C# Crypto library 1.7 (http://www.bouncycastle.org/csharp/)
 
 
 BUILD
 
-  To build the generator go to /wowza-token-auth-generator-java/ and run the following command:
+  To build the generator go to /wowza-token-auth-generator-dotnet/ and run the following command:
 ```  
-mvn clean install
+xbuild
 ```  
-  Upon success of the build, you will find the jar file (**token-auth-generator-1.2.jar**) in the folder named 'target'
+  Upon success of the build, you will find the exe file (**TokenAuthGenerator.exe**) in the folder named 'TokenAuthGenerator/bin/Debug'
 
 
 USAGE
 ```
-java -jar token-auth-generator-1.2.jar (encrypt | decrypt) (<primary_key> | <backup_key>) "<security_parameters>"
+TokenAuthGenerator.exe (encrypt | decrypt) (<primary_key> | <backup_key>) "<security_parameters>"
 ```
 
 
@@ -63,7 +64,7 @@ The following configuration deny blank or missing referrer:
 TO GENERATE TOKEN
 
 ```
-java -jar token-auth-generator-1.2.jar encrypt samplekey "expire=1598832000&ref_allow=*.trusted.com&ref_deny=denied.com"
+TokenAuthGenerator.exe encrypt samplekey "expire=1598832000&ref_allow=*.trusted.com&ref_deny=denied.com"
 ```
 Sample Output:
 ```
@@ -77,7 +78,7 @@ rtmp://12345.r.cdnsun.net/_definst_/live?token=110ea31ac69c09a2db0bdd74238843631
 TO DECRYPT TOKEN (for debugging purposes)
 
 ```
-java -jar token-auth-generator-1.2.jar decrypt samplekey 110ea31ac69c09a2db0bdd74238843631cdab498ff7e6e75cbd99cc4d05426ab679a57015d4e48438c97b921652daec62de3829f8ff437e27449cfdfc2f1e5d9fc47f14e91a51ea7
+TokenAuthGenerator.exe decrypt samplekey 110ea31ac69c09a2db0bdd74238843631cdab498ff7e6e75cbd99cc4d05426ab679a57015d4e48438c97b921652daec62de3829f8ff437e27449cfdfc2f1e5d9fc47f14e91a51ea7
 ```
 Sample Output:
 ```
