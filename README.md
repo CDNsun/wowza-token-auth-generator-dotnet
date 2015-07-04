@@ -13,7 +13,7 @@ BUILD
 ```  
 xbuild
 ```  
-  Upon success of the build, you will find the exe file (**TokenAuthGenerator.exe**) in the folder named 'TokenAuthGenerator/bin/Debug'
+  Upon success of the build, you will find the exe file (**TokenAuthGenerator.exe**) in the folder named ***TokenAuthGenerator/bin/Debug***
 
 
 USAGE
