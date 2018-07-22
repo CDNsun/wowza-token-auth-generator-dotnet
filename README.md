@@ -84,3 +84,8 @@ Sample Output:
 ```
 security parameters=expire=1598832000&ref_allow=*.trusted.com&ref_deny=denied.com
 ```
+
+CONTACT
+
+* W: https://cdnsun.com
+* E: info@cdnsun.com
