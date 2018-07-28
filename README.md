@@ -1,4 +1,4 @@
-#Token generator for Wowza Token Authentication
+# Token generator for Wowza Token Authentication
 
 
 REQUIRES
